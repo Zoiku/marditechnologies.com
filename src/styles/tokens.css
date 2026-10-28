@@ -1,0 +1,47 @@
+/* Mardi Technologies design tokens. Change the look here. */
+:root {
+  /* Colour roles */
+  --ground: #ffffff;
+  --soft: #f4f4f1;
+  --soft-hover: #ecece7;
+  --ink: #0b0b15;
+  --ink-tile: #15161f;
+  --ink-tile-hover: #1c1d28;
+  --ink-line: #2a2b36;
+  --grey: #5f6068; /* 6.3:1 on white */
+  --grey-on-ink: #9a9ba3; /* 7.1:1 on ink */
+  --grey-soft: #8a8b93; /* large text and input borders only */
+  --hairline: #e3e3de;
+  --line: #c9c9c3;
+  --orange: #ff3300; /* logo, motif, active state */
+  --action: #d42a00; /* buttons and small text, 5.1:1 with white */
+  --action-hover: #b82400;
+  --focus-ring: rgba(255, 51, 0, 0.18);
+
+  /* Type */
+  --font-sans: "Geist Variable", "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Eight text roles */
+  --t-page: clamp(44px, 5.6vw, 80px);
+  --t-section: clamp(32px, 3.4vw, 48px);
+  --t-feature: clamp(24px, 2vw, 30px);
+  --t-card: 20px;
+  --t-lead: clamp(19px, 1.5vw, 22px);
+  --t-body: 17px;
+  --t-small: 15px;
+  --t-label: 13px;
+
+  /* Layout */
+  --max: 1280px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --header: 76px;
+  --radius: 2px;
+  --section: clamp(96px, 10vw, 144px);
+  --band: clamp(72px, 9vw, 128px);
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --fast: 0.2s;
+  --medium: 0.35s;
+}

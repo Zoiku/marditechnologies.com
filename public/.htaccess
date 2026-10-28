@@ -1,0 +1,20 @@
+# Apache and cPanel hosting
+Options -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Old pages
+RewriteRule ^support/?$ /contact [R=301,L]
+RewriteRule ^blog(/.*)?$ / [R=301,L]
+
+# Drop .html and trailing slashes from addresses
+RewriteCond %{THE_REQUEST} \s/([^.?\s]+)\.html[\s?]
+RewriteRule ^ /%1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve /about from about.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]

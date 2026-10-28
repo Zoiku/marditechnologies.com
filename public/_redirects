@@ -1,0 +1,4 @@
+# Netlify and Cloudflare Pages
+/support      /contact   301
+/blog         /          301
+/blog/*       /          301
